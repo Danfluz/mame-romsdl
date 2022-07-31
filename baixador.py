@@ -24,7 +24,6 @@ for game in games:
         if gamename['href'] in lista:
             lista.remove(gamename['href'])
             print(f'Baixando {gamename["href"]}...')
-            print('print:', url+gamename['href'])
             wget.download(url + gamename['href'], f'ddownload/{gamename["href"]}')
             print('Ok!')
             print('')
